@@ -20,9 +20,9 @@ Olyan programmra van szükségünk amelyet bármely korosztály szívesen használnál é
 Letisztult,átlátható program kell hogy mindenki könnyedén tudja kezelni.
 Szükséges hogy a programot  webes felületen és androidos telefonon is tudjuk használni hogy bármilyen körülmények között elérjük.
 A programnak tartalmazni kell különbözõ tanegységeket.
-Kezdetben két tanegységet angol és matematikát fog tartalmazni.
+Kezdetben két tanegységet angol és matematikát fog tartalmazni.Amelyet belépést követõen tudunk kiválasztani hogy melyikel szeretnénk játszani.
 Minden felhasználót külön tudjunk kezelni.Mindenkinek szükség van egy egyedi felhasználónévre és jelszóra valamint egy e-mail címre amiket egy adatbázisban kell eltárolni.
-Ezen felül a pontszámot kell még tartalmazni az adatbázisnak ami kezdetben nulla és a játékok után fog kapni pontokat a játékosok.
+Ezen felül a pontszámot kell még tartalmazni az adatbázisnak ami kezdetben nulla és a játékok után fog kapni pontokat a játékosok ami mindig hozzáadódik az aktuális pontszámához.
 Miután kiválasztottuk hogy melyik tanegységen szeretnénk játszani azután nehézségi szintet tudjunk választani amely lehet:könnyû,közepes,és nehéz.
 A pontozás minden nehézségi szinten más legyen.Értelem szerûen minnél nehezebb annál több pontot kapjon a játékos.
 Amennyiben a játékos elér bizonyos ponthatároka kapjanak "medált","kupát","oklevelet" természetesen ezeket virtuálisan kép formában.
