@@ -7,7 +7,7 @@ Követelményspecifikáció
 
 
 
-Kövspec jelenlegi helyzet
+Kövspec jelenlegi helyzet 
 
 Amit a diákok használnak oktatószoftver rendkívül száraz és "unalmas" módon próbálja az anyago oktatni. 
 A felhasználók nem veszik elõ rendszeresen, nem szívesen használják, nem látnak benne élvezetet. Nagy az igény a szórakoztató irányból megközelítõ 
