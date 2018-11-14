@@ -1,8 +1,10 @@
 Funkspec jelenlegi helyzet
 
-
-
-
+A jelenleg elérhetõ oktató szoftverek mind konkrét tárgyakra vannak kifejlesztve (csak matek, csak angol stb), szükséges egy átfogó
+program, mellyel egy felületen elérhetõ valamennyi tárgyhoz a tananyag.
+Nagyon szárazon igyekeznek a tudást a gyerekek fejébe préselni, ezért sem szeretik ezeket haszálni.
+Nem lehet nehézségi szintet sem választani, nem az elejétõl kezdi a program a gyakoroltatást, így a diákoknak sokszor nincs sikerélményük.
+Mindemellett nincs semmilyen jutalmazás, pontozás, ranglista ami ösztönözné a gyereket, hogy minél többet kezbe vegye a programot.
 
 
 
