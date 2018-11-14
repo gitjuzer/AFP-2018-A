@@ -1,6 +1,6 @@
 A rendszer célja:
-
-
+Egy olyan oktatóprogram fejlesztése gyerekek számára, melyet szívesen használnak, akár maguktól is elõveszik mivel szórakozás közben tanulnak. 
+Erre azzal ösztönözzük õket, hogy jutalmakat szerezhetnek játék közben, illetve elõrébb léphetnek a ranglistán.
 
 
 Projekt terv:
