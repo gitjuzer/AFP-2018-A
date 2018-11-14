@@ -21,11 +21,14 @@ Kövspec jelenlegi helyzet
 
 Kövspec vágyálom rendszer
 
-
-
-
-
-
+Szükségünk van egy alkalmazásra amit szívesen használnak a diákok.
+Olyan alkalmazás kell amivel a felhasználók tanulnak mégis játékosan teszik ezt.
+Bárhol szívesen elõ vegyék és használják (pl.várakozás közben ezzel játszanak).
+Kihívást is jelentsen számukra hogy minnél többet akarjanak elérni és õk legyenek a legjobbak.
+Azonban ne legyen túl bonyolult hogy legyen siker élmény is.
+Legtöbb ember számára élvezhetõ legyen az általános iskolásoktól kezdve az egyetemistákon keresztül egészen a felnõtekig.
+Különbözõ tananyagban akkarjuk hogy meg méretessék magukat a felhasználók.
+Mindezek közül a legfontosabb hogy sok játék lehetõség legyen és felül múlja a többi piacon lévõ alkalmazást.
 
 
 
