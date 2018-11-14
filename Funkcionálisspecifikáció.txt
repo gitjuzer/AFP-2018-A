@@ -14,14 +14,16 @@ Funkspec jelenlegi helyzet
 
 Funkspec vágyálomrendszer
 
-
-
-
-
-
-
-
-
+Olyan programmra van szükségünk amelyet bármely korosztály szívesen használnál és képes vele játékosan tanulni.
+Letisztult,átlátható program kell hogy mindenki könnyedén tudja kezelni.
+Szükséges hogy a programot  webes felületen és androidos telefonon is tudjuk használni hogy bármilyen körülmények között elérjük.
+A programnak tartalmazni kell különbözõ tanegységeket.
+Kezdetben két tanegységet angol és matematikát fog tartalmazni.
+Minden felhasználót külön tudjunk kezelni.Mindenkinek szükség van egy egyedi felhasználónévre és jelszóra valamint egy e-mail címre amiket egy adatbázisban kell eltárolni.
+Ezen felül a pontszámot kell még tartalmazni az adatbázisnak ami kezdetben nulla és a játékok után fog kapni pontokat a játékosok.
+Miután kiválasztottuk hogy melyik tanegységen szeretnénk játszani azután nehézségi szintet tudjunk választani amely lehet:könnyû,közepes,és nehéz.
+A pontozás minden nehézségi szinten más legyen.Értelem szerûen minnél nehezebb annál több pontot kapjon a játékos.
+Amennyiben a játékos elér bizonyos ponthatároka kapjanak "medált","kupát","oklevelet" természetesen ezeket virtuálisan kép formában.
 
 
 
