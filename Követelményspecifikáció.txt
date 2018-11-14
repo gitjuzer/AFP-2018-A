@@ -9,14 +9,11 @@ Követelményspecifikáció
 
 Kövspec jelenlegi helyzet
 
-
-
-
-
-
-
-
-
+Amit a diákok használnak oktatószoftver rendkívül száraz és "unalmas" módon próbálja az anyago oktatni. 
+A felhasználók nem veszik elõ rendszeresen, nem szívesen használják, nem látnak benne élvezetet. Nagy az igény a szórakoztató irányból megközelítõ 
+oktatásra.
+Ezek kizárólag számítógépeken elérhetõk; mobilon Android, Windows Phone és IOS-ekre nincs implementálva.
+A meglévõ szoftverek mind egyetlen témakört céloznak meg, nincs egy átfogó rendszer, ami több tárgyat lefedne.
 
 
 Kövspec vágyálom rendszer
