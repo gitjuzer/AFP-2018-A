@@ -1,4 +1,4 @@
-Funkspec jelenlegi helyzet
+Funkspec jelenlegi helyzet 
 
 A jelenleg elérhetõ oktató szoftverek mind konkrét tárgyakra vannak kifejlesztve (csak matek, csak angol stb), szükséges egy átfogó
 program, mellyel egy felületen elérhetõ valamennyi tárgyhoz a tananyag.
