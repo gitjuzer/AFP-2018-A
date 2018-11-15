@@ -35,6 +35,26 @@ Amennyiben a játékos elér bizonyos ponthatároka kapjanak "medált","kupát","oklev
 
 Funkspec követelménylista
 
+-Könnyû kezelés, reszponzív felület
+-Gyors játékindítás és kilépés
+-Hasznosítható tudás az elejétõl
+-Motivációt jelentõ pontrendszer
+-Kis erõforrásigény
+-Progresszió átvitele eszközök közt
+-Heti kihívások
 
+
+
+	|Modul			    |ID		|Verzió		|Kifejtés
+	|
+	|Felhasználók tárolása      F1		 1.0		 adatbázis csatlakoztatása a rendszerhez és abba történõ rekordfelvitel regisztrációkor
+	|Felhasználók beléptetése   F2		 1.0		 adatbázisban tárolt felhasználók programba való beléptetése
+	|Játékmodul kiválasztása    F3		 1.0		 A tanulni kívánt tárgy kiválasztása
+	|Nehézség kiválasztása      F4		 1.0		 A használni kívánt nehézség kiválasztása
+	|Játék elindítása           F5		 1.0		 .
+	|Eredmény mentése           F6		 1.0		 Felhasználó eredményének tárolása az adatbázisban
+	|-	   		    F7		 1.0	
+	|-			    F8		 1.0						 
+					
 
 
