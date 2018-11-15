@@ -5,8 +5,13 @@ Erre azzal ösztönözzük õket, hogy jutalmakat szerezhetnek játék közben, illetve 
 
 Projekt terv:
 
+ Projekt szerepkörök, felelõsségek : (?)
 
-
+ Projekt munkások és felelõsségeik : (?)
+ 
+ Ütemterv: Az alkalmazásnak a fél év végére készen kell lennie 
+ 
+ Mérföldkövek : adatbázis rendszer kiépítése , szerver kapcsolat létrejötte az alkalmazás és az adatbázis között , (?)
 
 Üzleti folyamatok modellje:
 
@@ -14,6 +19,16 @@ Projekt terv:
 
 
 Követelmények:
+ Funkcionális követelmények:
+ -Menü: - válaszon nyelvet
+ nehézségi szint(easy ,medium,hard), (?)
+
+ Nemfunkcionális követelmények: 
+ -A programnak egyszerûnek kell lennie , ezért a teljesítménye nem lehet nagy , viszonylag olcsóbb hardvereken 
+ is szépen kell futnia és ezáltal a  megbízhatósága is nagyobb lesz mivel nincs túlterhelve a rendszer.
+ 
+ Törvényi elõírások, szabványok :
+ -trágár szavak nem jelenhetnek meg az alkalmazásban valamint felnõtt tartalmak sem 
 
 
 
@@ -26,8 +41,18 @@ Funkcionális terv:
 Fizikai környezet:
 
 
+  Platform/oprendszer:
+  -Windows (PHP -WampServer)
+  -Android(java)
 
-
+  Tûzfal/Protokol: (?)
+  Megvásárolt komponensek:
+    o Vásárolt software komponensek és külsõ rendszerek: (?)
+    o Hardver és hálózati topológia: (?)
+    o Fizikai alrendszerek: (?)
+    o Fejlesztõ eszközök: (?)
+    o Keretrendszer: (?)
+              
 Absztrakt domain modell:
 
 
@@ -39,16 +64,30 @@ Architekturális terv:
 
 
 Adatbázisterv:
+ 
+  felhasználó tábla :       
+    -id pimary key
+    -username unique not null
+    -passwd not null
 
 
 
-
+  adatok tábla:
+    -username foreign key - felhasznalo/username
+    -email unique not null
+    -score 
+    -level
+    -activity
+    
 Implementációs terv:
 
 
 
 
 Tesztterv:
+
+ -az alkalmazás tesztelése több részre fog lebontódni , tesztelni kell az adatbázis rendszert , a wamp servert ,
+ az eltárolt felhasználói adatokat.
 
 
 
@@ -58,6 +97,6 @@ Telepítési terv:
 
 
 
-Karbantartási terv:
+Karbantartási terv:(?)
 
 
