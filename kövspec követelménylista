@@ -1,0 +1,41 @@
+
+
+Követelményspecifikáció követelménylista
+
+- Fontos a lokális helyesség:  - Teljesség
+                               - Ellentmondás-mentesség
+                               - Szigorú specifikációs nyelv
+                               – Ellenőrzött tervezési minták használata
+                               – Specifikáció ellenőrzése/verifikáció/
+                               
+- Legyen megvalósítható, ehhez fontos: -erőforrások,
+                                       -használhatóság
+                                       -karbantarthatóság
+                                       és figyelembe kell venni a -költségbeli-
+                                                                  -technikai-
+                                                                  -környezeti-
+                                                                  kockázatokat is.
+                                                                  
+- Szükséges, hogy megbízható legyen:  – Védelem a szisztematikus hibák ellen
+                                      – Az összes technikai és irányítási tevékenység meghatározása,
+                                        figyelése, ellenőrzése
+                                      - Szoftverek ellenőrzése, fejlesztési eszközök megfelelősége
+                                      - Probléma bejelentés és javítás rögzítése:   – Dokumentáció és visszajelzések
+                                                                                    – Elemzések/okok azonosítása
+                                                                                    – Felderítés és megoldás módszerei, megelőző
+                                                                                      tevékenységek
+                                                                                    – Javítás ellenőrzése, ismételt igazolás
+                                                                                      és érvényesítés 
+                                      
+- Szintén nagyon fontos, hogy legyenek támogatók és olyan személyek, akik karbantartják a rendszert.
+
+- Könnyen ellenőrizhető/tesztelhető legyen: – specifikus, egyértelmű, számszerűsíthető
+
+- Tegyen eleget a nemfunkcionális követelményeknek: -megbízhatóság
+                                                    -válaszidő
+                                                    -tárfoglalás
+                                                    -rugalmasság
+                                                    -robosztusság
+                                                    -hordozhatóság
+                                                    
+- Könnyen és ingyenesen letölthető legyen
