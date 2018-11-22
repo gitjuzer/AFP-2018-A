@@ -16,7 +16,7 @@
 - [ ] Projekt munkások es felelősségeik :
     - **Projekt menendzser**:
     - **UI Tervező**: @Nagy Martin @Barzsó Ádám @Csernei Máté
-    - **Adatbázis tervező**: @Nagy Zsolt @Juhász Bertalan @Kovács Martina
+    - **Adatbázis tervező**: @Nagy Zsolt @Juhász Bertalan @Kovács Attila
     - **RestAPI fejlesztő**: @Szarvák Ákos @Laczik Dávid
     - **Mobil applikáció fejlesztő**: @Barzsó Ádám  @Csernei Máté
     - **Web fejlesztő**: @Nagy Martin @Járomi Dávid
