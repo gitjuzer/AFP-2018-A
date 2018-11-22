@@ -10,16 +10,16 @@
     - **RestAPI fejlesztő**
         - Összeköti az adatbázist és a RestAPI-t, különböző kérésekkel lehet elérni az adatbázist pl.: **/api/login**. Minden platformról lehet küldeni kéréseket és minden esetben valamilyen **JSON** választ ad vissza.  
     - **Mobil applikáció fejlesztő**
-        - Natív környezetben készíti el a projektet mobil eszközökre(**Android -> Java/Kotlin, IOS -> Swift/Object-C**)
+        - Natív környezetben készíti el a projektet mobil eszközökre(**Android -> Java/Kotlin**)
     - **Web fejlesztő**
         - **PHP** script használatával készíti el a projekt webes felületét és funkciónalitását. Az adatbázist a **RestAPI** segítégével éri el.
 - [ ] Projekt munkások es felelősségeik :
     - **Projekt menendzser**:
-    - **UI Tervező**:
-    - **Adatbázis tervező**:
-    - **RestAPI fejlesztő**: @re4ven @davidlaczik
-    - **Mobil applikáció fejlesztő**:
-    - **Web fejlesztő**:
+    - **UI Tervező**: @Nagy Martin @Barzsó Ádám @Csernei Máté
+    - **Adatbázis tervező**: @Nagy Zsolt @Juhász Bertalan @Kovács Martina
+    - **RestAPI fejlesztő**: @Szarvák Ákos @Laczik Dávid
+    - **Mobil applikáció fejlesztő**: @Barzsó Ádám  @Csernei Máté
+    - **Web fejlesztő**: @Nagy Martin @Járomi Dávid
 - [ ] Ütemterv: Az alkalmazásnak a fél év végére készen kell lennie 
 - [ ] Mérföldkövek : adatbázis rendszer kiépítése , szerver kapcsolat létrejötte az alkalmazás és az adatbázis között , (?)
 - [ ] Üzleti folyamatok modellje:
