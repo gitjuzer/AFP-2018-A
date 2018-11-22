@@ -1,0 +1,25 @@
+# Projekt terv
+
+- [x] Projekt szerepkörök, felelősségek :
+    - **Projekt menendzser**
+        - Vezeti és felügyeli a projekt menetét, megszervezi a feladatok szétosztását. 
+    - **UI Tervező**
+        - A felületi tervek és elemek megtervezése
+    - **Adatbázis tervező**
+        - Adatbázis táblák tervezése, elkészítése. SQL függvények készítés
+    - **RestAPI fejlesztő**
+        - Összeköti az adatbázist és a RestAPI-t, különböző kérésekkel lehet elérni az adatbázist pl.: **/api/login**. Minden platformról lehet küldeni kéréseket és minden esetben valamilyen **JSON** választ ad vissza.  
+    - **Mobil applikáció fejlesztő**
+        - Natív környezetben készíti el a projektet mobil eszközökre(**Android -> Java/Kotlin, IOS -> Swift/Object-C**)
+    - **Web fejlesztő**
+        - **PHP** script használatával készíti el a projekt webes felületét és funkciónalitását. Az adatbázist a **RestAPI** segítégével éri el.
+- [ ] Projekt munkások es felelősségeik :
+    - **Projekt menendzser**:
+    - **UI Tervező**:
+    - **Adatbázis tervező**:
+    - **RestAPI fejlesztő**: @re4ven @davidlaczik
+    - **Mobil applikáció fejlesztő**:
+    - **Web fejlesztő**:
+- [ ] Ütemterv: Az alkalmazásnak a fél év végére készen kell lennie 
+- [ ] Mérföldkövek : adatbázis rendszer kiépítése , szerver kapcsolat létrejötte az alkalmazás és az adatbázis között , (?)
+- [ ] Üzleti folyamatok modellje:
