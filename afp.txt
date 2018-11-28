@@ -10,3 +10,4 @@ Jelenlegi helyzet:
 	-1 user
 
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
+.
