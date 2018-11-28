@@ -1,0 +1,12 @@
+Az adatbázis minden információját és adatait ebben a txt-ben meglehet találni.
+
+|	User	|	Password	|	Read only?	|
+-----------------------------------------------------------------
+|	uugfii	|	uugf11		|	false		|(próba alapdata)
+
+Jelenlegi helyzet:
+	-3 oszlop
+	-2 sor
+	-1 user
+
+Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
