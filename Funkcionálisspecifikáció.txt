@@ -62,3 +62,8 @@ Funkspec követelménylista
 
 Használati esetek
 
+Két féle használati eset lesz diák és tanár.
+Tanár: Kérdéseket tölt fel a diákok számára. Meg kell adnia a kérdést és a hozzá tartozó válasz lehetõséget.Meg kell jelölnie a jó választ.
+Diák:A tanár által feltett kérdéseket kell kitöltenie és minnél több pontott szereznie. Ezen felül élveznie kell az alkalmazást és a legtöbb dolgot megtanulnia játékosan. :)  
+
+
