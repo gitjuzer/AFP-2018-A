@@ -9,3 +9,9 @@ Jelenlegi helyzet:
 	-1 user
 
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
+Adatbázis elérhetõsége:
+
+mongodb://<dbuser>:<dbpassword>@ds115094.mlab.com:15094/afp
+
+<dbuser>: uugfii
+<dbpassword>: uugf11
