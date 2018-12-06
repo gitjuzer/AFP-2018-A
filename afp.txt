@@ -3,10 +3,12 @@ Az adatbázis minden információját és adatait ebben a txt-ben meglehet találni.
 |	ID	|	User	|	Password	|	email		|	teacher	|	admin	|
 -----------------------------------------------------------------------------------------------------------------
 |	001	|	uugfii	|	uugfii		|	uugfii@afp	|	true	|	true	|
+|	002	|	djk7no	|	djk7no		|	djk7no@afp	|	false	|	true	|
+|	003	|	A1k32f	|	A1k32f		|	A1k32f@afp	|	false	|	false	|
 
 Jelenlegi helyzet:
 	-6 oszlop
-	-1 user
+	-3 user
 
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
 Adatbázis elérhetõsége:
