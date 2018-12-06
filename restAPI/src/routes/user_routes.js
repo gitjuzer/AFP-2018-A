@@ -4,17 +4,9 @@ const userController = require('../controllers/user_controller');
 
 const router = express.Router();
 
-router.get('/login', (req, res) => {
-    res.json({ message: 'login' });
-});
-router.post('/registration', (req, res) => {
-    res.json({ message: 'registration' });
-});
-router.delete('/delete', (req, res) => {
-    res.json({ message: 'delete' });
-});
-router.post('/update', (req, res) => {
-    res.json({ message: 'update' });
-});
+router.post('/', userController.create);
+router.post('/:id', userController.login);
+router.put('/:id', userController.update);
+router.delete('/:id', userController.delete);
 
 module.exports = router;

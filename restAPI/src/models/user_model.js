@@ -3,7 +3,7 @@ const mongodbErrorHandler = require('mongoose-mongodb-errors');
 const uniqueValidator = require('mongoose-unique-validator');
 const bcrypt = require('bcrypt-nodejs');
 
-const mongoConnection = require('../connection');
+//const mongoConnection = require('../connection');
 
 const Schema = mongoose.Schema;
 
@@ -67,5 +67,5 @@ userSchema.plugin(mongodbErrorHandler);
 userSchema.plugin(uniqueValidator);
 
 // Model export
-const user = mongoConnection.model('User', userSchema);
-module.exports = user;
+// const user = mongoConnection.model('User', userSchema);
+//module.exports = user;
