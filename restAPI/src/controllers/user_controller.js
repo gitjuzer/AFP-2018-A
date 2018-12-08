@@ -2,11 +2,39 @@ const bcrypt = require('bcrypt-nodejs');
 
 const User = require('../models/user_model');
 
+exports.show = (req, res) => {
+    var users = [];
+
+    User.find({}, (err, result) => {
+        result.forEach((user) => {
+            users.push(user);
+        });
+    });
+
+    // const cursor = User.db.collection('User').find({}).toArray((err, result) => {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     console.log(result);
+    //     users.push(result);
+    // });
+
+    res.json({ users });
+}
+
 exports.create = (req, res, next) => {
 	const email = req.body.email;
     const username = req.body.username;
     const password = req.body.password;
-    
+
+	const user = new User({
+		email: req.body.email,
+		username: req.body.username,
+		password: req.body.password
+	});
+
+    user.save();
+
 	return res.json({ email, username, password });
 }
 
@@ -28,7 +56,7 @@ exports.login = (req, res) => {
 		res.render('dashboard');
 	}
 
-	const user = await User.findOne({
+	const user = User.findOne({
 		email: req.body.email
 	});
 
