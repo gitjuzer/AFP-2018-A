@@ -3,23 +3,22 @@ const bcrypt = require('bcrypt-nodejs');
 const User = require('../models/user_model');
 
 exports.show = (req, res) => {
-    var users = [];
+	let users = {};
 
-    User.find({}, (err, result) => {
-        result.forEach((user) => {
-            users.push(user);
-        });
-    });
+	User.find({}, (err, user) => {
+		if (err) {
+			res.json({
+				status: 'error',
+				message: err,
+			});
+		}
 
-    // const cursor = User.db.collection('User').find({}).toArray((err, result) => {
-    //     if (err) {
-    //         throw err;
-    //     }
-    //     console.log(result);
-    //     users.push(result);
-    // });
+		user.forEach((user) => {
+			users[user._id]  = user;
+		});
 
-    res.json({ users });
+		res.json(users);
+	});
 }
 
 exports.create = (req, res, next) => {
