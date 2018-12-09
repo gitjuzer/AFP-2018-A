@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt-nodejs');
 
+const Orbit = require('../middlewares/orbit_logger');
 const User = require('../models/user_model');
 
 exports.show = (req, res) => {
@@ -11,6 +12,8 @@ exports.show = (req, res) => {
 				status: 'error',
 				message: err,
 			});
+
+			Orbit.log('Felhasználók listázása sikertelen!');
 		}
 
 		user.forEach((user) => {
@@ -18,57 +21,79 @@ exports.show = (req, res) => {
 		});
 
 		res.json(users);
+
+		Orbit.log('Felhasználók listázása sikeres!');
 	});
 }
 
 exports.create = (req, res, next) => {
-	const email = req.body.email;
-    const username = req.body.username;
-    const password = req.body.password;
-
 	const user = new User({
 		email: req.body.email,
 		username: req.body.username,
 		password: req.body.password
 	});
 
-    user.save();
+	user.save((err, user) => {
+		if (err) {
+			
 
-	return res.json({ email, username, password });
+			return res.json({
+				response: 'false',
+			});
+		}
+
+		Orbit.log('Felhasználó létrehozása sikertelen!');
+
+		res.json({
+			response: 'true',
+		})
+	});
 }
 
 exports.delete = (req, res) => {
-    if (req.body.id) {
-		let query = { _id: req.body.id };
-		User.remove(query, (err, data) => {
+    if (req.body.username) {
+		let query = { username: req.body.username };
+
+		User.deleteOne(query, (err, data) => {
 			if (err) {
-				return res.json({ error: 'Delete unsuccessful!' });
+				Orbit.log('Felhasználó törlése sikertelen!');
+
+				return res.json({ response: 'false' });
 			}
 
-			res.json({ message: 'Delete successful!' });
+			Orbit.log('Felhasználó törlése sikeres!');
+
+			res.json({ response: 'true' });
 		});
 	}
 }
 
 exports.login = (req, res) => {
-    if (req.session.userEmail && req.session.username) {
-		res.render('dashboard');
-	}
+	if (req.body.username) {
+		let query = { username: req.body.username }
 
-	const user = User.findOne({
-		email: req.body.email
-	});
+		var user = User.findOne(query, (err, data) => {
+			if (err) {
+				Orbit.log('Bejelentkezés sikertelen!');
+				
+				return res.json({ response: 'false' });
+			}
+		});
+	}
 
 	if (!bcrypt.compareSync(req.body.password, user.password)) {
-		console.log({ from: 'api/user/login', error: 'Incorrect password' });
+		Orbit.log('Bejelentkezési jelszó nem megfelelő!');
 
-		return res.render('404');
+		return res.json({
+			response: 'false',
+		});
 	}
 
-	req.session.userEmail = user.email;
-	req.session.username = user.username;
+	Orbit.log('Bejelentkezés sikeres!');
 
-	return res.render('dashboard');
+	res.json({
+		response: 'true',
+	})
 }
 
 exports.update = (req, res) => {
