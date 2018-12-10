@@ -1,0 +1,8 @@
+package com.example.joshua.mysqlexampleproject;
+
+public class db_Strings {
+    static final String DATABASE_URL = "localhost:3306";
+    static final String DATABASE_NAME = "android_database";
+    static final String USERNAME = "root";
+    static final String PASSWORD = "";
+}
