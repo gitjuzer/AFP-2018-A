@@ -9,6 +9,7 @@
             <li><a href="<?=ADMIN_BASE_URL?>/?M=tanar&A=matek">Matek</a></li>
              <li><a href="<?=ADMIN_BASE_URL?>/?M=tanar&A=angol">Angol</a></li>
                <li><a href="<?=ADMIN_BASE_URL?>/?M=tanar&A=alapprogramozas">Alap Programozás</a></li>
+                <li><a href="<?=ADMIN_BASE_URL?>/?M=tanar&A=list">Feladatok listázása</a></li>
         </ul>
     </li>
 </ul>
@@ -28,6 +29,8 @@
             <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=matek">Matek</a></li>
              <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=angol">Angol</a></li>
                <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=alapprogramozas">Alap Programozás</a></li>
+              
+               
         </ul>
     </li>
 </ul>

@@ -11,6 +11,12 @@ switch($_GET['A']){
         break;
     case 'alapprogramozas': header('Location:'.'http://localhost/base_project/protected/adminView/tanar/alapprogramozas.php/');
         break;
+    case 'list': header('Location:'.'http://localhost/base_project/protected/adminView/tanar/list.php/');
+        break;
+    
+    
+   
+    
     
     default: echo 'hiba!';
         break;
