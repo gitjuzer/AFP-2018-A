@@ -1,0 +1,77 @@
+private class GetData extends AsyncTask<String, String, String>{
+
+        String msg = "";
+            //JDBC driver name and Database URL
+        static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+        static final String DB_URL = "jdbc:mysql://" + db_Strings.DATABASE_URL + "/" + db_Strings.DATABASE_NAME;
+
+        protected void onPreExecute(){
+            progressTextView.setText("Connecting to database...");
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            Connection conn = null;
+            Statement stmt = null;
+
+            try{
+                Class.forName("com.mysql.jdbc.Driver");
+                conn = DriverManager.getConnection(DB_URL, sb_Strings.Username, db_Strings.Password);
+
+                stmt = conn.createStatement();
+                String sql = "SELECT * FROM Fruits";
+
+                ResultSet rs = stmt.executeQuery(sql);
+
+                while (rs.next()){
+                    String name = rs.getString("name");
+                    double price = rs.getDouble("price");
+
+                    fruitsMap.put(name, price);
+                }
+
+                msg = "Process complete";
+
+                rs.close();
+                stmt.close();
+                conn.close();
+
+            } catch (SQLException connError){
+                msg = "An exception was thrown for JDBC.";
+                connError.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                msg = "A class not found exception was thrown.";
+                e.printStackTrace();
+            } finally{
+                try {
+                    if (stmt != null) {
+                        stmt.close();
+                        }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    if (conn != null) {
+                        conn.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+            return null;
+        }
+        @Override
+        protected void onPostExecute(String msg){
+            progressTextView.setText(this.msg);
+
+            if (fruitsMap.size()>0){
+                itemAdapter = new item_Adapter(thisContext, fruitsMap);
+                myListView.setAdapter(itemAdapter);
+            }
+
+        }
+    }
+} //End of main Activity
