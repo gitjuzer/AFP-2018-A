@@ -35,7 +35,7 @@ $query = "INSERT INTO users
          }
         else 
         {
-             echo "Nincs siker!";
+             echo "Nincs siker! Lehet létezik már ilyen felhasznáónév!";
         } 
         
       }
@@ -63,7 +63,7 @@ $query = "INSERT INTO users
          }
         else 
         {
-             echo "Nincs siker!";
+             echo "Nincs siker! Lehet létezik már ilyen felhasznáónév!";
         } 
   
           

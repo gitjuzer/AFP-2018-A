@@ -3,28 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/WAMP/www/base_project/protected/userManager.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/autok/list.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/login.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/tanar/angol.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/diak.php</file>
-            <file>file:/D:/WAMP/www/base_project/init.sql</file>
-            <file>file:/D:/WAMP/www/base_project/admin/index.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/tanar/matek.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/diak/alapprogramozas.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/autok/add.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/adminView/diak/matek.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/admin_menu.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/admin_header.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/register.php</file>
+            <file>file:/D:/WAMP/www/base_project/protected/userManager.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/admin_config.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/admin_content.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/tanar.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/diak/angol.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/database.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/tanar/alapprogramozas.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/autok/deletall.php</file>
-            <file>file:/D:/WAMP/www/base_project/protected/admin_footer.php</file>
+            <file>file:/D:/WAMP/www/base_project/init.sql</file>
+            <file>file:/D:/WAMP/www/base_project/protected/adminView/tanar/matek.php</file>
         </group>
     </open-files>
 </project-private>

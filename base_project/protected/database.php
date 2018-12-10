@@ -77,7 +77,8 @@ function getField($queryString, $queryParams = []){
     return $result;
 }
 function executeDML($queryString, $queryParams = []){
-    require_once '../../protected/admin_config.php';  
+    require_once '../../protected/admin_config.php'; 
+    
     $connection = getConnection();  
     // 3) segédváltozóba megfogalmazzuk a lekérdezést
     // ==>paraméterben kapom 
@@ -101,6 +102,38 @@ function executeDML($queryString, $queryParams = []){
     
     return $success;
 }
+
+function executeDML1($queryString, $queryParams = []){
+     require_once '../../../protected/admin_config.php'; 
+    
+    $connection = getConnection();  
+    // 3) segédváltozóba megfogalmazzuk a lekérdezést
+    // ==>paraméterben kapom 
+    // 4) a lekérdezésből utasítás készítünk 
+    $statement = $connection->prepare($queryString);
+    // 5) végreahjtjuk a lekérdezést
+    // ==> az ehhez szükséges paramétereket paraméterben kapom
+    $success = $statement->execute($queryParams);
+    /*
+    // 6) ha sikerült a végrehajtás visszaolvassuk a választ
+    $result = [];
+    if($success){
+        $result = $statement->fetch()[0];
+    }
+     * */
+
+    // 7) lezárom az utasítást
+    $statement->closeCursor();
+    // 8) lezárom a kapcsolatot
+    $connection = null;
+    
+    return $success;
+}
+
+
+
+
+
 
 /*
  * HF: getList(), getField() kidolgozása
