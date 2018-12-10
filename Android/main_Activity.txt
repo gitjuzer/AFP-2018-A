@@ -1,0 +1,56 @@
+package com.example.joshua.mysqlexampleproject;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.os.AsyncTask;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class MainActivity extends AppCompatActivity {
+
+    item_Adapter itemAdapter;
+    Context thisContext;
+    ListView myListView;
+    TextView progressTextView;
+    TextView databasename;
+    TextView databaseURL;
+    TextView databaseUsername;
+    TextView databaseDriver;
+    Map<String,Double> fruitsMap = new LinkedHashMap<String, Double>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Resources res = getResources();
+        myListView = (ListView) findViewById(R.id.myListView);
+        progressTextView = (TextView) findViewById(R.id.tv_progress);
+        databasename = findViewById(R.id.tv_DatabaseName);
+        databaseURL = findViewById(R.id.tv_DatabaseURL);
+        databaseUsername = findViewById(R.id.tv_DatabaseUsername);
+        databaseDriver = findViewById(R.id.tv_DatabaseDriverName);
+
+        thisContext = this;
+        progressTextView.setText("");
+        Button btn = (Button) findViewById(R.id.btn_getData);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new GetData().execute("");
+            }
+        });
+    }
