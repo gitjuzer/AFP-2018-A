@@ -18,3 +18,16 @@ INSERT INTO Fruits(name, price) VALUE('orange', 0.89);
 INSERT INTO Fruits(name, price) VALUE('banana', 1.49);
 INSERT INTO Fruits(name, price) VALUE('apple', 0.99);
 INSERT INTO Fruits(name, price) VALUE('apricot', 1.59);
+
+
+
+
+CREATE USER 'java'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON android_database.* TO 'java'@'localhost' IDENTIFIED BY 'password';
+
+CREATE USER 'Joshua'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON . TO 'Joshua'@'localhost';
+
+CREATE USER 'Joshua'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON . TO 'Joshua'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
