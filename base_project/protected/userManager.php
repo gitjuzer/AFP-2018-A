@@ -26,5 +26,6 @@ function UserLogin($username, $password){
     $userRecord = getRecord($query, $queryParams);
     $_SESSION['uid'] = $userRecord['id'];
     $_SESSION['username'] = $userRecord['username'];
+    $_SESSION['teacher'] = $userRecord['teacher'];
     header('Location:'.ADMIN_BASE_URL);
 }

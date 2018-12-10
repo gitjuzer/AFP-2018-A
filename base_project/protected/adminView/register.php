@@ -30,6 +30,7 @@ $query = "INSERT INTO users
           require_once '../../protected/database.php'; 
          
          if(executeDML($query, $params)){
+             header('Location:'.ADMIN_BASE_URL);
              echo "Tanár hozzáadása sikeres";
          }
         else 
