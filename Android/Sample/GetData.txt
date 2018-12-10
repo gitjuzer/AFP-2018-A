@@ -38,11 +38,15 @@ import java.util.Map;
             Statement stmt = null;
 
             try{
+                //String pass = null;
                 Class.forName("com.mysql.jdbc.Driver");
-                conn = DriverManager.getConnection(jdbc:mysql://localhost:3306/android_database, root, "");
+                conn = DriverManager.getConnection("jdbc:mysql://10.0.2.2:3306/android_database", "Joshua", "password");
+
+                DatabaseMetaData dbmd = conn.getMetaData();
 
                 stmt = conn.createStatement();
                 String sql = "SELECT * FROM Fruits";
+
 
                 ResultSet rs = stmt.executeQuery(sql);
 
@@ -92,6 +96,16 @@ import java.util.Map;
         protected void onPostExecute(String msg){
             progressTextView.setText(this.msg);
 
+            //String dbName = dbmd.getDatabaseProductName();
+            //String driverName = dbmd.getDriverName();
+            //String dbUrl = dbmd.getURL();
+            //String userName = dbmd.getUserName();
+
+            //databasename.setText(dbName);
+            //databaseDriver.setText(driverName);
+            //databaseUsername.setText(userName);
+            //databaseURL.setText(dbUrl);
+
             if (fruitsMap.size()>0){
                 itemAdapter = new item_Adapter(thisContext, fruitsMap);
                 myListView.setAdapter(itemAdapter);
@@ -99,4 +113,4 @@ import java.util.Map;
 
         }
     }
-} //End of main Activity 
+} //End of main Activity
