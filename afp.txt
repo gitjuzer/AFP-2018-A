@@ -8,7 +8,7 @@ Az adatbázis minden információját és adatait ebben a txt-ben meglehet találni.
 
 Jelenlegi helyzet:
 	-6 oszlop
-	-2 user
+	-3 user
 
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
 Adatbázis elérhetõsége:
