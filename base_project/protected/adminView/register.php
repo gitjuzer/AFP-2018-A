@@ -94,5 +94,5 @@ $query = "INSERT INTO users
     <input placeholder="e-mail megerősítése" name="emailagain"/><br/>
     <button type="submit" name="register">Regisztráció</button><br/>
    <label> Elfogadom, az</label>  
-    <a href="http://localhost/base_project/protected/adminView/userprotection.php"> adatvédelmi nyilatkozatot</a>
+    <a href="http://localhost/base_project/public/adatvedelem.pdf"> adatvédelmi nyilatkozatot</a>
 </form>
