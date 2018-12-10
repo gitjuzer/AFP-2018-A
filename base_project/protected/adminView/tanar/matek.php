@@ -32,13 +32,13 @@
 
 <form method="POST">
     
-    
+     <h1>Matek feladatok</h1>
     <table  align="center" style="width:100%">
   <tr>
     <th>Kérdés Megadása</th>
     <th  colspan="2"  ><input placeholder="Ide irja a kérdést" name="question" style="width:100%"/></th> 
    
-     <th><button type="submit" name="endquestion">Kérdés sor befejezése</button></th>
+     <th><a href="http://localhost/base_project/admin/index.php">Kérdés sor befejezése</a></th>
   </tr>
   <tr>
     <td></td>
@@ -59,14 +59,14 @@
     <td></td>
   </tr>
   <tr>
-    <td><button type="submit" name="back">Vissza</button></td>
+    <td></td>
     <td><input type="radio" name="goodanswer" value=3>Helyes válasz </td>
     <td><input type="radio" name="goodanswer" value=4>Helyes válasz </td>
     <td><button type="submit" name="next">Következő</button></td>
   </tr>
 </table>
     
-  <a href="http://localhost/base_project/admin/index.php">Visszalépés mentés nélkül</a>
+  
 
 </body>
 </html>
