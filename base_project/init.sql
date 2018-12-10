@@ -1,7 +1,5 @@
 
 
-
-
 CREATE SCHEMA `zh_project` DEFAULT CHARACTER SET utf8 ;
 
 USE zh_project;
@@ -13,7 +11,7 @@ CREATE TABLE zh_project.users(
    
     email VARCHAR(250) NOT NULL,
     teacher bool default 0,
-    teacherid varchar(200),
+    teacherid varchar(200) ,
     active TINYINT NOT NULL DEFAULT 1, 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP, 
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP 
@@ -25,7 +23,7 @@ CREATE TABLE zh_project.users(
     CONSTRAINT PK_users PRIMARY KEY(id),
     CONSTRAINT UQ_users_username UNIQUE(username)
 );
-drop table zh_project.users;
+
 
 INSERT INTO zh_project.users(username, password, email)
-VALUES('teszt1', 'teszt','nagymartin46@gmail.com');
+VALUES('teszt2', 'teszt','negymartin46@gmail.com');

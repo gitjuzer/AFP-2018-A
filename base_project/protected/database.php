@@ -1,5 +1,6 @@
 <?php
 
+
 // a lekérdezések végrehajtásához szükséges függvények 
 // cél: máshonnan átadva a lekérdezés szövegét + paramétereit 
 //  megtörténjen a végrehajtás 
@@ -12,6 +13,7 @@ function getConnection(){
     return $connection;
 }
 function getRecord($queryString, $queryParams = []){
+    require_once '../protected/admin_config.php'; 
     $connection = getConnection();  
     // 3) segédváltozóba megfogalmazzuk a lekérdezést
     // ==>paraméterben kapom 
@@ -75,6 +77,7 @@ function getField($queryString, $queryParams = []){
     return $result;
 }
 function executeDML($queryString, $queryParams = []){
+    require_once '../../protected/admin_config.php';  
     $connection = getConnection();  
     // 3) segédváltozóba megfogalmazzuk a lekérdezést
     // ==>paraméterben kapom 

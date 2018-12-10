@@ -14,7 +14,7 @@
          
          if($_POST['teacher']== 1){
              
-$query = "INSERT INTO users 
+$query = "INSERT INTO users
                    (username,password,email,teacher,teacherid)
                    VALUES
                    (:username,:password,:email,:teacher,:teacherid)";
@@ -27,7 +27,7 @@ $query = "INSERT INTO users
              
          ];
         
-         require_once 'http://localhost/base_project/protected/database.php'; 
+          require_once '../../protected/database.php'; 
          
          if(executeDML($query, $params)){
              echo "Tanár hozzáadása sikeres";
@@ -41,8 +41,8 @@ $query = "INSERT INTO users
       else
       {
           
-          $query = "INSERT INTO users 
-                   (username,password,email,teacher)
+       $query = "INSERT INTO users
+                   (username,password,email,teacher,teacherid)
                    VALUES
                    (:username,:password,:email,:teacher,:teacherid)";
          $params = [
@@ -50,19 +50,21 @@ $query = "INSERT INTO users
              ':password'    =>  $_POST['password'],
              ':email'      =>  $_POST['email'],
              ':teacher'      =>  $_POST['teacher'],
-            
+             ':teacherid'      =>  $_POST['teacherid']
              
          ];
         
-          
-        require_once 'http://localhost/base_project/protected/database.php'; 
+          require_once '../../protected/database.php'; 
+         
          if(executeDML($query, $params)){
+             header('Location:'.ADMIN_BASE_URL);
              echo "Diák hozzáadása sikeres";
          }
         else 
         {
              echo "Nincs siker!";
         } 
+  
           
       }
       

@@ -5,11 +5,14 @@
         <group>
             <file>file:/D:/WAMP/www/base_project/protected/userManager.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/adminView/login.php</file>
+            <file>file:/D:/WAMP/www/base_project/protected/admin_menu.php</file>
+            <file>file:/D:/WAMP/www/base_project/protected/admin_header.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/adminView/register.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/admin_config.php</file>
+            <file>file:/D:/WAMP/www/base_project/protected/admin_content.php</file>
             <file>file:/D:/WAMP/www/base_project/protected/database.php</file>
             <file>file:/D:/WAMP/www/base_project/init.sql</file>
-            <file>file:/D:/WAMP/www/base_project/protected/adminView/userprotection.php</file>
+            <file>file:/D:/WAMP/www/base_project/admin/index.php</file>
         </group>
     </open-files>
 </project-private>
