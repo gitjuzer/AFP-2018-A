@@ -1,0 +1,33 @@
+CREATE SCHEMA Android_Database DEFAULT CHARACTER SET utf8 ;
+
+
+CREATE TABLE Fruits(
+	ID INT(11) AUTO_INCREMENT,
+    name VARCHAR(20),
+    price DECIMAL(10,2),
+    
+    CONSTRAINT PK_FRUITS PRIMARY KEY(ID)
+);
+
+INSERT INTO Fruits(name, price) VALUE('watermelon', 3.49);
+INSERT INTO Fruits(name, price) VALUE('pear', 0.99);
+INSERT INTO Fruits(name, price) VALUE('cherry', 0.79);
+INSERT INTO Fruits(name, price) VALUE('peach', 1.39);
+INSERT INTO Fruits(name, price) VALUE('grape', 1.29);
+INSERT INTO Fruits(name, price) VALUE('orange', 0.89);
+INSERT INTO Fruits(name, price) VALUE('banana', 1.49);
+INSERT INTO Fruits(name, price) VALUE('apple', 0.99);
+INSERT INTO Fruits(name, price) VALUE('apricot', 1.59);
+
+
+
+
+CREATE USER 'java'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON android_database.* TO 'java'@'localhost' IDENTIFIED BY 'password';
+
+CREATE USER 'Joshua'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON . TO 'Joshua'@'localhost';
+
+CREATE USER 'Joshua'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON . TO 'Joshua'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
