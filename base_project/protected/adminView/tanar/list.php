@@ -3,6 +3,7 @@
 
     $query = "SELECT * FROM matekfeladatok";
     $records = getList($query);
+    
 ?>
 <a href="http://localhost/base_project/admin/index.php">visszalépés</a>
 
