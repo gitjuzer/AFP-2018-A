@@ -96,3 +96,84 @@ constraint pk_matek primary key(id)
 );
 
 
+ 
+ 
+ create table matekteszt(
+ id int not null auto_increment,
+
+question varchar(200),
+answer1  varchar(200),
+answer2  varchar(200),
+answer3  varchar(200),
+answer4  varchar(200),
+goodanswer int ,
+
+useranswer  int,
+ active TINYINT NOT NULL DEFAULT 1, 
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP 
+						ON UPDATE CURRENT_TIMESTAMP, 
+	deleted_at DATETIME DEFAULT NULL, 
+    created_by INT DEFAULT NULL, 
+    updated_by INT DEFAULT NULL, 
+    deleted_by INT DEFAULT NULL,
+ 
+ CONSTRAINT PK_matekfeladatok PRIMARY KEY(id)
+ 
+ 
+ );
+ 
+ create table angolteszt(
+ id int not null auto_increment,
+
+question varchar(200),
+answer1  varchar(200),
+answer2  varchar(200),
+answer3  varchar(200),
+answer4  varchar(200),
+goodanswer int ,
+
+useranswer  int,
+ active TINYINT NOT NULL DEFAULT 1, 
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP 
+						ON UPDATE CURRENT_TIMESTAMP, 
+	deleted_at DATETIME DEFAULT NULL, 
+    created_by INT DEFAULT NULL, 
+    updated_by INT DEFAULT NULL, 
+    deleted_by INT DEFAULT NULL,
+ 
+ CONSTRAINT PK_matekfeladatok PRIMARY KEY(id)
+ 
+ 
+ );
+ create table programozasteszt(
+ id int not null auto_increment,
+
+question varchar(200),
+answer1  varchar(200),
+answer2  varchar(200),
+answer3  varchar(200),
+answer4  varchar(200),
+goodanswer int ,
+
+useranswer  int,
+ active TINYINT NOT NULL DEFAULT 1, 
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP 
+						ON UPDATE CURRENT_TIMESTAMP, 
+	deleted_at DATETIME DEFAULT NULL, 
+    created_by INT DEFAULT NULL, 
+    updated_by INT DEFAULT NULL, 
+    deleted_by INT DEFAULT NULL,
+ 
+ CONSTRAINT PK_matekfeladatok PRIMARY KEY(id)
+ 
+ 
+ );
+ 
+
+ 
+ 
+
+ 

@@ -5,11 +5,13 @@ if(!array_key_exists('A', $_GET) || empty($_GET['A'])){
 }
 
 switch($_GET['A']){
-    case 'matek': require_once __DIR__.'/diak/matek.php';
+    case 'matek':header('Location:'.'http://localhost/base_project/protected/adminView/diak/matek.php/');
         break;
-    case 'angol': require_once __DIR__.'/diak/angol.php';
+    case 'angol':header('Location:'.'http://localhost/base_project/protected/adminView/diak/angol.php/');
         break;
-    case 'alapprogramozas': require_once __DIR__.'/diak/alapprogramozas.php';
+    case 'alapprogramozas': header('Location:'.'http://localhost/base_project/protected/adminView/diak/alapprogramozas.php/');
+        break;
+    case 'list': header('Location:'.'http://localhost/base_project/protected/adminView/diak/list.php/');
         break;
     
     default: echo 'hiba!';

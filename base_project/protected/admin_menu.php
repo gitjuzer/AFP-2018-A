@@ -29,6 +29,7 @@
             <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=matek">Matek</a></li>
              <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=angol">Angol</a></li>
                <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=alapprogramozas">Alap Programozás</a></li>
+               <li><a href="<?=ADMIN_BASE_URL?>/?M=diak&A=list">Megoldott Feladatok listázása</a></li>
               
                
         </ul>
