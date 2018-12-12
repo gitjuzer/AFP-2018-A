@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 <?php 
 /* Kettéválasztom a dolgot: 
  *  - nem bej. user) csak bejelentkezni tud

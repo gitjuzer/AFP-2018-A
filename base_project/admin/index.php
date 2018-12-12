@@ -14,3 +14,23 @@
         <div id="footer"><?php require_once '../protected/admin_footer.php';?></div>
     </body>
 </html>
+
+
+
+<style>
+#header {
+    background-color: rgb(69, 134, 205);
+    height: 20%;
+    background-size: cover;
+    border: 10px #3b464c;
+}
+
+#header p {
+    font-size: 25pt;
+    color: black;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+</style>

@@ -1,18 +1,17 @@
-
-<style>
-   
-.body {
-   
-    font-size: 30pt;
-    background-color: rgb(42, 85, 179);
+html {
     margin: 0;
-    height: 40%;
-    border: 10px #3b464c;
-   
+    padding: 0;
+}
+.body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
 }
 h1 {
-    font-size: 60pt;
-    color: black;
+    font-size: 15pt;
+    color: #20bcd5;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
@@ -34,9 +33,25 @@ p {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: 10px #3b464c;
 }
-
+#header {
+    background-color: lightblue;
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+#header p {
+    font-size: 25pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
 .quote {
     font-size: 12pt;
     text-align: right;
@@ -113,59 +128,18 @@ input, textarea {
     margin-left: 7px;
     margin-right: 7px;
 }
-
-
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<?php
-      // a felhasználó rákattintott a Bejelentkezés gombra 
-    if(array_key_exists('login', $_POST)){
-        // beküldött adatok kiolvasása
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        // beküldött adatok ellenőrzése (formai)
-        if(empty($username) || empty($password)){
-            echo "Hiányozó bejelentkezési adat(ok)!";
-        }
-        else{
-            if(UserLogin($username, $password)){
-                
-            }
-            else{
-                 echo "Helytelen bejelentkezési adatok";
-            }  
-        }
-    }
-   
-
-?>
- <div class="body">  
-
-<form method="POST">
-    
-    <label>Felhasználónév</label><br/>
-    <input type="text" name="username"/><br/>
-    <label>Jelszó</label><br/>
-    <input type="password" name="password"/><br/>
-    <button class= " submit" type="submit" name="login">Belépés</button><br/>
-    <a href="http://localhost/base_project/protected/adminView/register.php">Amennyiben még nincs felhasználói fiókja kattintson ide!</a>
-   
-</form>
- </div>
-
-
+#contacts a {
+    text-decoration: none;
+}
+#contacts img:hover {
+    opacity: 0.8;
+}
+#contacts {
+    text-align: center;
+}
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
+}

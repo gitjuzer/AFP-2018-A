@@ -29,4 +29,5 @@ function UserLogin($username, $password){
     $_SESSION['teacher'] = $userRecord['teacher'];
     $_SESSION['user']= $userRecord['username'];
     header('Location:'.ADMIN_BASE_URL);
+    
 }
