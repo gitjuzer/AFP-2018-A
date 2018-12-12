@@ -3,7 +3,23 @@ const bcrypt = require('bcrypt-nodejs');
 const Orbit = require('../middlewares/orbit_logger');
 const User = require('../models/user_model');
 
-exports.show = (req, res) => {
+exports.find = (req, res) => {
+	if (req.params.username) {
+		let query = { username: req.params.username }
+
+		var user = User.findOne(query, (err, data) => {
+			if (err) {
+				Orbit.log('Bejelentkezés sikertelen!');
+				
+				return res.json({ response: 'false' });
+			}
+
+			return res.json(data);
+		});
+	}
+}
+
+exports.findAll = (req, res) => {
 	let users = {};
 
 	User.find({}, (err, user) => {
@@ -26,7 +42,7 @@ exports.show = (req, res) => {
 	});
 }
 
-exports.create = (req, res, next) => {
+exports.insert = (req, res, next) => {
 	const user = new User({
 		email: req.body.email,
 		username: req.body.username,
@@ -35,14 +51,14 @@ exports.create = (req, res, next) => {
 
 	user.save((err, user) => {
 		if (err) {
-			
+			Orbit.log('Felhasználó létrehozása sikertelen!');
 
 			return res.json({
 				response: 'false',
 			});
 		}
 
-		Orbit.log('Felhasználó létrehozása sikertelen!');
+		Orbit.log('Felhasználó létrehozása sikeres!');
 
 		res.json({
 			response: 'true',
@@ -51,8 +67,8 @@ exports.create = (req, res, next) => {
 }
 
 exports.delete = (req, res) => {
-    if (req.body.username) {
-		let query = { username: req.body.username };
+    if (req.params.username) {
+		let query = { username: req.params.username };
 
 		User.deleteOne(query, (err, data) => {
 			if (err) {
@@ -69,8 +85,8 @@ exports.delete = (req, res) => {
 }
 
 exports.login = (req, res) => {
-	if (req.body.username) {
-		let query = { username: req.body.username }
+	if (req.params.username) {
+		let query = { username: req.params.username }
 
 		var user = User.findOne(query, (err, data) => {
 			if (err) {
@@ -81,7 +97,7 @@ exports.login = (req, res) => {
 		});
 	}
 
-	if (!bcrypt.compareSync(req.body.password, user.password)) {
+	if (!bcrypt.compareSync(req.params.password, user.password)) {
 		Orbit.log('Bejelentkezési jelszó nem megfelelő!');
 
 		return res.json({
