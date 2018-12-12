@@ -6,11 +6,11 @@ táblázat neve: afp
 -----------------------------------------------------------------------------------------------------------------
 |	001	|	uugfii	|	uugfii		|	uugfii@afp	|	true	|	true	|
 |	002	|	djk7no	|	djk7no		|	djk7no@afp	|	false	|	true	|
-|	003	|	A1k32f	|	A1k32f		|	A1k32f@afp	|	false	|	false   |
+
 
 Jelenlegi helyzet:
 	-6 oszlop
-	-2 user
+	-3 user
 
 táblázat neve: users
 
