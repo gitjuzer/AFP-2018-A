@@ -28,6 +28,17 @@ Jelenlegi helyzet:
 	-7 oszlop
 	-2 user
 
+táblázat neve: kerdesvalasz
+
+|	kérdés		|	válasz1		|	válasz2		|	válasz3		|
+-------------------------------------------------------------------------------------------------
+|	Hangya bogár?	|	igen		|	nem		|	nem tudom	|(próba, a táblázat létrehozásához volt szükséges)
+
+Jelenlegi helyzet:
+	-4 oszlop
+	-1 user
+
+
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
 Adatbázis elérhetõsége:
 
