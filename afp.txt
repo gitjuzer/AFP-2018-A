@@ -17,10 +17,16 @@ táblázat neve: users
 |	user	|				password				|	email		|
 -----------------------------------------------------------------------------------------------------------------
 |	admin	|	$2a$10$0eQ6mYEXexgYSMONN92qieZv4nvTQonsakA/4dnfbnQ.4GdoQd8d.	|	test@admin.hu	|
+|	admin2	|	$2a$10$fWK.6lgiTMTEWM4cfrNgzO1H52G8Hntfk0J1Z0eZ4wWiq0uaQFIC2	|	test@admin2.hu	|
 
 |	teacher	|	admin	|	createdAt	 |	updatedAt	  |
 -----------------------------------------------------------------------------------
 |	false	|	false	|2018-12-08T22:59:26.018Z|2018-12-08T22:59:26.018Z|
+|	false	|	false	|2018-12-08T23:10:45.265Z|2018-12-08T23:10:45.265Z|
+
+Jelenlegi helyzet:
+	-7 oszlop
+	-2 user
 
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
 Adatbázis elérhetõsége:
