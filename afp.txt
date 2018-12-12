@@ -20,6 +20,7 @@ táblázat neve: users
 
 |	teacher	|	admin	|	createdAt	 |	updatedAt	  |
 -----------------------------------------------------------------------------------
+|	false	|	false	|2018-12-08T22:59:26.018Z|2018-12-08T22:59:26.018Z|
 
 Minden módosítás plusz adat vagy bármi más az adatbázisban itt megtekinthetõ.
 Adatbázis elérhetõsége:
