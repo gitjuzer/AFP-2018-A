@@ -1,0 +1,10 @@
+A Postman egy API teszter alkalmazás, ami Chrome böngészõbõl nõtte ki magát. Célja, hogy front-end függetlenül tudjuk tesztelni a back-end mûködését.
+
+A teszt során megvizsgáltam különbözõ eshetõségeket, ezek a következõk voltak:
+- GET : - get all user data
+	- get a specific user data
+- POST: - register a user
+	- login user / ez a funkció javításra szorul /
+- DELETE: - delete a user by username
+- PUT: - update a user / ez a funkció javításra szorul/
+
