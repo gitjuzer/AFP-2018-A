@@ -8,3 +8,12 @@ A teszt során megvizsgáltam különbözõ eshetõségeket, ezek a következõk voltak:
 - DELETE: - delete a user by username
 - PUT: - update a user / ez a funkció javításra szorul/
 
+WORKING: 
+	- JSON alapú kommunikáció a szerverrel
+	- A resAPI-ból letudjuk kérni JSON fájlban az összes user adatait illetve csak egy specifikus user-ét is username alapján
+	- Tudunk usert regisztrálni, ha az átadott adatok megfelelnek a követelményeknek, hibakezelés megoldva
+	- Tudunk username alapján törölni
+	- restAPI logolással végig követhetõek a szerveren végzett mûveletek
+
+TODO: 
+- login és update javítása
