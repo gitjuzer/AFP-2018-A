@@ -136,6 +136,26 @@ középen megjelenik a három témakör gombként
 Elvárt mûködés:jobb fent kijelentkezés gomb, bal fent a pontszám és a felhasználónév.
 
 
+
+Tesztterv
+---------
+Ennek a dokumentumnak az a célja, hogy Tanulássegítõ program (Tanuljunk játékosan) megvalósítása projektben a rendszerek tesztelési elvárásait ismertesse.
+A projekt sikeres befejezésének eszköze a tesztelési terv és a tesztelési jegyzõkönyvek.
+Akkor tekinthetõ egy adott részrendszer tesztelése sikeresnek, ha 
+  - a tesztelési jegyzõkönyvnek mezõi 80%-ban MEGFELELTEK , azaz
+  - a specifikációban elfogadott funkciók mûködnek,
+A rendszertesztelési terv általánosan ismerteti a tesztelés folyamatát. 
+
+
+
+Tesztelés menete
+----------------
+1.2018/12/
+Az oldali tesztelésnek lezárása, az átadás-átvételi folyamat megkezdése.
+2.2018/12/
+Az üzembe állításhoz szükséges dokumentációk Megrendelõnek történõ átadása, éles üzembe állítás.
+
+
 Telepítési terv:
 
 
