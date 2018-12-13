@@ -85,9 +85,31 @@ Implementációs terv:
 
 
 Tesztterv:
+Funkcionális teszt
 
- -az alkalmazás tesztelése több részre fog lebontódni , tesztelni kell az adatbázis rendszert , a wamp servert ,
- az eltárolt felhasználói adatokat.
+
+Bevezetés
+
+A Rendszer Funkcionális Teszt a rendszer egészének, beleértve a környezeti eljárásokat is, alapos tesztelések elõre meghatározott tesztadatokkal, amiket 
+lehetséges tesztelõ eszközökkel kell végezni. A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenõrzése, a rendszer által 
+megvalósított üzleti szolgáltatások verifikálása.
+
+Tesztelési eljárások
+
+Teszteset azonosító: 001 – Alfa teszt
+  - Idõtartam: 5 nap
+  - Teszt kezdete: 2018/11/29
+  - Teszt befejezése: 2018/12/02
+  - A teszt elsõdleges célja: az eddig meglévõ funkcióknak a különbözõ böngészõkkel,és androidokkal való kompatibilitásának tesztelése. A tesztet a fejlesztõk végzik.
+  - Az eljárás sikeres, ha különbözõ böngészõkben és különbözõ androidokon is megfelelõen mûködnek a különbözõ funkciók.
+
+Tesztelés azonosító: 002 – Béta teszt
+  - Idõtartam: 4 nap
+  - Teszt kezdete: 2018/12/04
+  - Teszt befejezése: 2018/12/07
+  - A teszt elsõdleges célja: Minden meglévõ funkció megfelelõ mûködésének ellenõrzése. A tesztet a fejlesztõk és harmadik személyek végzik.
+  - Az eljárás sikeres, ha minden funkció megfelelõen mûködik a harmadik személyek által tesztelve is.
+
 
 
 
