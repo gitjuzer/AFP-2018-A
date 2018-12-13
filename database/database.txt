@@ -25,9 +25,19 @@ táblázat neve: users
 |	false	|	false	|2018-12-08T22:59:26.018Z|2018-12-08T22:59:26.018Z|
 |	false	|	false	|2018-12-08T23:10:45.265Z|2018-12-08T23:10:45.265Z|
 
+|			poster_src						 |
+----------------------------------------------------------------------------------
+|https://m.media-amazon.com/images/M/						 |
+MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@ |
+._V1_SY1000_CR0,0,675,1000_AL_.jpg\						 |
+
+|	title		|	overview	|
+------------------------------------------------
+|Avangers: Infinity War	|	N/A		|
+
 Jelenlegi helyzet:
-	-7 oszlop
-	-2 user
+	-7 oszlop + 3 oszlop
+	-2 user + 1 user
 
 táblázat neve: kerdesvalasz
 
