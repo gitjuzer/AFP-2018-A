@@ -111,7 +111,29 @@ Tesztelés azonosító: 002 – Béta teszt
   - Az eljárás sikeres, ha minden funkció megfelelõen mûködik a harmadik személyek által tesztelve is.
 
 
+Béta teszt
+----------
+Tesztelendõ böngészõk: Opera, Firefox, Google Chrome, Safari
+Tesztelendõ android rendszerek: 5.0.0, vagy újabak 
+Tesztelendõ kijelzõméretek: 1280x720 (minimum), 1366x768, 1920x1080
 
+Androidon tesztelendõ funkciók, elemek:
+
+Login felület:
+- A login felület elrendezésének ellenõrzése:
+Elvárt mûködés: felül "Tanuljunk játékosan" felirat megjelenik, alatta középre igazítva a "Bejelentkezés felirat". Az alatt a bejelentkezési adatok kitöltéséhez
+szükséges mezõk.
+
+- A Belépés gomb mûködése:  
+Elvárt mûködés: Megfelelõ felhasználónév és jelszó megadása esetén a gomb lenyomásakor bejelentkezik.
+Jelenleg: felhasználónévhez "Diák"-ot beírva a diák nyitó felülethez navigál, "Tanár"-t beírva a tanár nyitó felülethez.
+
+
+Bejelentkezett Felület:
+- Témakörválasztás elrendezésének ellenõrzése: 
+középen megjelenik a három témakör gombként
+- A játék felület elrendezésének ellenõrzése:
+Elvárt mûködés:jobb fent kijelentkezés gomb, bal fent a pontszám és a felhasználónév.
 
 
 Telepítési terv:
