@@ -36,8 +36,8 @@ MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@
 |Avangers: Infinity War	|	N/A		|
 
 Jelenlegi helyzet:
-	-7 oszlop
-	-2 user
+	-7 oszlop + 3 oszlop
+	-2 user + 1 user
 
 táblázat neve: kerdesvalasz
 
