@@ -156,6 +156,32 @@ Az oldali tesztelésnek lezárása, az átadás-átvételi folyamat megkezdése.
 Az üzembe állításhoz szükséges dokumentációk Megrendelõnek történõ átadása, éles üzembe állítás.
 
 
+Tesztelési folyamat leírása
+---------------------------
+Az alfa és béta tesztek során a fejlesztõk létrehozzák a jegyzõkönyv sablonját, majd felteszik egy online felületre.
+A tesztelõk megnyitják az alkalmazást a webes vagy androidos felületen és elkezdik normál felhasználóként használni.
+A felmerülõ hibákat, esetleg nem várt viselkedést feljegyzik a jegyzõkönyvbe. Az alfa teszt esetén ez a következõket tartalmazza:
+- Tesztelõ neve
+- Rögzítés ideje
+- A hiba helye
+- A hiba leírása
+- Opcionális mellékletek
+- Böngészõ neve, amelyben a hiba fellépett / android verzió száma
+
+A béta teszt jegyzõkönyvének mezõi:
+- Tesztelõ neve
+- Tesztelt elem
+- Tesztelt elem funkciója
+- Tesztelt elem helye az alkalmazásban
+- A támogatott böngészõkben megfelelõen mûködik-e, vagy sem
+- A támogatott felbontásokon megfelelõen mûködik-e, vagy sem
+- A támogatott android verzión megfelelõen mûködik-e, vagy sem
+- A támogatott felbontásokon megfelelõen mûködik-e, vagy sem
+
+A tesztek után a jegyzõkönyv véglegesítésre kerül, felkerül a verziókezelõ rendszerbe. A felvett
+hibákat a fejlesztõk ellenõrzik, reprodukálják, és létrehoznak hozzá egy feladatot majd javítják.
+
+
 Telepítési terv:
 
 
